@@ -5,13 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+    <Compile Remove="Migrations\20210109180016_Initial.cs" />
+    <Compile Remove="Migrations\20210109180016_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20210109182408_AddObjects.cs" />
+    <Compile Remove="Migrations\20210109182408_AddObjects.Designer.cs" />
+    <Compile Remove="Migrations\20210111001436_ModelName.cs" />
+    <Compile Remove="Migrations\20210111001436_ModelName.Designer.cs" />
+    <Compile Remove="Migrations\20210111001957_KeyVehicle.cs" />
+    <Compile Remove="Migrations\20210111001957_KeyVehicle.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
 
